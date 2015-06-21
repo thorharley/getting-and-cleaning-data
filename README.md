@@ -11,14 +11,14 @@ A code book explaining the results and variables presented in the data set
 ### run_analysis.R
 The R script used to construct and tidy this data set from its component parts. As a first step to prepare the data, it does the following:
 * Reads in the flat data measurement and lookup files from local copies (assumed to have been downloaded and unzipped to the working directory):
-    * X_train.txt
-    * X_test.txt
-    * Y_train.txt
-    * Y_test.txt
-    * subject_train.txt
-    * subject_test.txt
-    * activity_labels.txt
-    * features.txt
+    * ./train/X_train.txt
+    * ./test/X_test.txt
+    * ./train/Y_train.txt
+    * ./test/Y_test.txt
+    * ./train/subject_train.txt
+    * ./test/subject_test.txt
+    * ./activity_labels.txt
+    * ./features.txt
 * Enriches with column names
 * Combines the 'training' and 'test' data sets
 * Replaces 'Activity' indices wih descriptive names
