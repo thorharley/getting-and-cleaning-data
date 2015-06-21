@@ -1,6 +1,6 @@
 # Getting and Cleaning Data - Course Project
 
-# Read raw data files in from local copies in current directory
+# Read raw data files (assumes local copies saved to current directory)
 xTrain <- read.table("./X_train.txt")
 xTest <- read.table("./X_test.txt")
 yTrain <- read.table("./Y_train.txt")
@@ -39,4 +39,3 @@ colnames(aggregated)[1:2] <- c("Subject", "Activity")
 
 # Write resulting aggregated mean data to a text file
 write.table(aggregated, "./aggregated.txt", row.names=FALSE)
-head(aggregated,10)
