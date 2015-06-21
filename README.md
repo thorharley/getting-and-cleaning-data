@@ -7,7 +7,7 @@ This repo contains an R script for extracting, cleaning and thence calculating t
 Files
 -----
 ### CodeBook.md
-A code book explaining the results and variables presented in the data set.
+A code book explaining the results and variables presented in the data set
 ### run_analysis.R
 The R script used to construct and tidy this data set from its component parts. As a first step to prepare the data, it does the following:
 * Reads in the flat data measurement and lookup files from local copies (assumed to have been downloaded and unzipped to the working directory):
@@ -22,6 +22,6 @@ The R script used to construct and tidy this data set from its component parts. 
 * Enriches with column names
 * Combines the 'training' and 'test' data sets
 * Replaces 'Activity' indices wih descriptive names
-* Subsets the vaiables to only include mean and standard deviation measurements
+* Subsets the variables to only include mean and standard deviation measurements
 
 It then creates a tidy data set aggregating measurement means by Subject and Activity.
