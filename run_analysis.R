@@ -1,12 +1,15 @@
 # Getting and Cleaning Data - Course Project
 
-# Read raw data files (assumes local copies saved to current directory)
-xTrain <- read.table("./X_train.txt")
-xTest <- read.table("./X_test.txt")
-yTrain <- read.table("./Y_train.txt")
-yTest <- read.table("./Y_test.txt")
-subjectTrain <- read.table("./subject_train.txt")
-subjectTest <- read.table("./subject_test.txt")
+# Read raw data files (assumes local copies downloaded from
+# https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+# and unzipped to current directory)
+
+xTrain <- read.table("./train/X_train.txt")
+xTest <- read.table("./test/X_test.txt")
+yTrain <- read.table("./train/Y_train.txt")
+yTest <- read.table("./test/Y_test.txt")
+subjectTrain <- read.table("./train/subject_train.txt")
+subjectTest <- read.table("./test/subject_test.txt")
 activityLabels <- read.table("./activity_labels.txt")
 features <- read.table("./features.txt")
 
