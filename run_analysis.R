@@ -1,6 +1,6 @@
 # Getting and Cleaning Data - Course Project
 
-# Read raw data files in from local copies
+# Read raw data files in from local copies in current directory
 xTrain <- read.table("./X_train.txt")
 xTest <- read.table("./X_test.txt")
 yTrain <- read.table("./Y_train.txt")
